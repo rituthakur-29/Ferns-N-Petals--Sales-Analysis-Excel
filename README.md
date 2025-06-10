@@ -5,6 +5,25 @@ This project presents a comprehensive sales analysis for FNP (Ferns N Petals), l
 ## 🔗 Dashboard Preview
 ![Image](https://github.com/user-attachments/assets/c524ec29-553b-48b6-b0cc-6032cf5b527e)
 
+## 🧩 Data Model & Structure
+
+This diagram represents the relationship between the three main tables imported into Excel:
+- Customers
+- Orders
+- Products
+  
+![Image](https://github.com/user-attachments/assets/916270b3-1582-4e35-b412-a3d16ce58902)
+
+
+## 🔧 Data Preparation:
+
+- Cleaned and transformed raw data in Power Query Editor.
+- Removed inconsistencies, standardized column formats, and created new calculated columns (like Revenue, Diff order delivery, etc.).
+- Built proper one-to-many relationships for an efficient data model:
+    - Customers[Customer_ID] → Orders[Customer_ID]
+    - Products[Product_ID] → Orders[Product_ID]
+- This structured data model enabled smooth creation of DAX measures and dashboard visualizations.
+
 ## 📊 Key Insights:
 
 - Total Orders: 1,000
